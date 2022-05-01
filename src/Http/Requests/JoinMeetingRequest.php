@@ -5,7 +5,7 @@ namespace Nrz\Meeting\Http\Requests;
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Exceptions\HttpResponseException;
-use Nrz\Common\Traits\ApiResponse;
+use Nrz\Meeting\Traits\ApiResponse;
 
 class JoinMeetingRequest extends FormRequest
 {
