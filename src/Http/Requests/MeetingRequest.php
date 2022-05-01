@@ -6,7 +6,7 @@ use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Exceptions\HttpResponseException;
 use Illuminate\Validation\Rule;
-use Nrz\Common\Traits\ApiResponse;
+use Nrz\Meeting\Traits\ApiResponse;
 
 class MeetingRequest extends FormRequest
 {
