@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Nrz\Meeting\Http\Controllers\MeetingController;
 
-Route::middleware("manage.meeting")->group(function () {
+Route::middleware("auth")->group(function () {
     Route::apiResource("meeting", MeetingController::class)->parameters([
         "meeting" => "meeting:meetingID"
     ]);
