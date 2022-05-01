@@ -1,0 +1,24 @@
+{
+    "name": "nrz/meeting",
+    "authors": [
+        {
+            "name": "abolfazl norzad",
+            "email": "abolfazlnorzad78@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Nrz\\Meeting\\" : "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "\\Nrz\\Meeting\\Providers\\MeetingServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "joisarjignesh/bigbluebutton": "~2.3"
+    }
+}
