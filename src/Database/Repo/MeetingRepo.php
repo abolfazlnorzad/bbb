@@ -19,6 +19,7 @@ class MeetingRepo
 
     public function createMeeting(array $data)
     {
+        $data["welcomeMessage"] = $data["welcome"] ?? "خوش آمدید";
         Bigbluebutton::create($data);
         return $this->getQuery()->create($data);
     }
