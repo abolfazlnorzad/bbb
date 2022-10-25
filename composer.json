@@ -19,6 +19,6 @@
         }
     },
     "require": {
-        "joisarjignesh/bigbluebutton": "~2.3"
+          "nrz/bigbluebutton": "dev-master"
     }
 }
