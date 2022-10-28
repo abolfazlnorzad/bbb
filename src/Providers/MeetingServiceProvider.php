@@ -13,6 +13,7 @@ class MeetingServiceProvider extends \Illuminate\Support\ServiceProvider
     {
         $this->loadMigrationsFrom(__DIR__."/../Database/Migrations");
         Route::middleware('api')
+            ->prefix("api")
             ->group(__DIR__ . '/../Routes/meeting_routes.php');
         $this->app->register(BigbluebuttonServiceProvider::class);
         $loader = AliasLoader::getInstance();
